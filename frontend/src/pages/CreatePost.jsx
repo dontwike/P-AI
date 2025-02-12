@@ -22,6 +22,7 @@ const CreatePost = () => {
         setGeneratingImg(true);
         const res = await fetch('https://p-ai-w4ee.onrender.com/api/v1/dalle', {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
